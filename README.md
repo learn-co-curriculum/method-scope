@@ -15,11 +15,11 @@ In this lesson, we'll introduce the concepts of method scope and variable scope.
 
 Naming variables is hard, but it is important. We need our code to be as descriptive as possible. Any other developer reading over one of our programs should be able to understand what our code does. A big part of this is having variable (and method) names that are sensible and descriptive. 
 
-Our variable names should be descriptive of what they hold, but they should also be concise. This can be difficult to achieve. You might even be worrying that you'll run out of unique, descriptive and concise variable names. Don't worry though, all programming languages have what is called **scope**. Scope means that not all variables exist everywhere in a program. If they did, then a variable that you'd be writing in file A could accidentally overwrite a variable made by your friend in file B. Having a scope for variables allows you to have greater confidence that you aren't overwriting someone else's work when you create variables.
+Our variable names should describe what they hold, but they should also be concise. This can be difficult to achieve. You might even be worrying that you'll run out of unique, descriptive and concise variable names. Don't worry though, all programming languages have what is called **scope**. Scope limits the effective range of a given variable in a program, so that a variable in file A cannot be accidentally overwritten by a variable of the same name in file B and vice versa.
 
 ## What is Scope?
 
-Methods in ruby create their own scope. "Scope" refers to the areas of your program in which certain data is available to you. **Any local variable created outside of a method will be unavailable inside of a method. In addition, local variables created inside of a method (i.e. in between the `def` and `end` keywords of a method) 'fall out of scope' once you're outside the method.**
+"Scope" refers to the areas of your program in which certain data is available for use. Methods in ruby automatically establish their own scope. **Any local variable created outside of a method will be unavailable inside of a method. Likewise, local variables created inside of a method (i.e. in between the keywords `def` and `end`  of a method) 'fall out of scope' outside the method.**
 
 Let's take a look at the following example:
 
